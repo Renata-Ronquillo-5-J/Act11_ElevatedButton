@@ -1,41 +1,120 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        // useMaterial3: false,
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'Renata Ronquillo Lopez #1307',
+            style: TextStyle(
+              fontWeight: FontWeight.bold, // Letra en negrita
+            ),
+          ),
+          backgroundColor: Color(0xffda88e1),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              // Primer par de botones (rosa)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {
+                      // Acción del botón
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xffe8a1b8), // Color rosa
+                    ),
+                    child: Text('Elevated button'),
+                  ),
+                  SizedBox(width: 10), // Espacio entre botones
+                  ElevatedButton(
+                    onPressed: null, // Botón deshabilitado
+                    child: Text('Disabled'),
+                  ),
+                ],
+              ),
+              SizedBox(height: 20), // Espacio entre filas de botones
 
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
+              // Segundo par de botones (rosa)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      // Acción del botón
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xffe8a1b8), // Color rosa
+                    ),
+                    icon: Icon(Icons.add_reaction), // Icono
+                    label: Text('Elevated button icon'),
+                  ),
+                  SizedBox(width: 10), // Espacio entre botones
+                  ElevatedButton.icon(
+                    onPressed: null, // Botón deshabilitado
+                    icon: Icon(Icons.add_reaction), // Icono
+                    label: Text('Disabled'),
+                  ),
+                ],
+              ),
+              SizedBox(height: 20), // Espacio entre grupos de botones
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
+              // Primer par de botones (verde pastel)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {
+                      // Acción del botón
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xFFB2DFDB), // Verde pastel
+                    ),
+                    child: Text('Elevated button'),
+                  ),
+                  SizedBox(width: 10), // Espacio entre botones
+                  ElevatedButton(
+                    onPressed: null, // Botón deshabilitado
+                    child: Text('Disabled'),
+                  ),
+                ],
+              ),
+              SizedBox(height: 20), // Espacio entre filas de botones
+
+              // Segundo par de botones (verde pastel)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      // Acción del botón
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xFFB2DFDB), // Verde pastel
+                    ),
+                    icon: Icon(Icons.library_add), // Icono
+                    label: Text('Elevated button icon'),
+                  ),
+                  SizedBox(width: 10), // Espacio entre botones
+                  ElevatedButton.icon(
+                    onPressed: null, // Botón deshabilitado
+                    icon: Icon(Icons.library_add), // Icono
+                    label: Text('Disabled'),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
