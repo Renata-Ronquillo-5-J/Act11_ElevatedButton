@@ -33,12 +33,20 @@ class MyApp extends StatelessWidget {
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color(0xffe8a1b8), // Color rosa
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // Bordes rectangulares
+                      ),
                     ),
                     child: Text('Elevated button'),
                   ),
                   SizedBox(width: 10), // Espacio entre botones
                   ElevatedButton(
                     onPressed: null, // Botón deshabilitado
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // Bordes rectangulares
+                      ),
+                    ),
                     child: Text('Disabled'),
                   ),
                 ],
@@ -55,6 +63,9 @@ class MyApp extends StatelessWidget {
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color(0xffe8a1b8), // Color rosa
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // Bordes rectangulares
+                      ),
                     ),
                     icon: Icon(Icons.add_reaction), // Icono
                     label: Text('Elevated button icon'),
@@ -62,6 +73,11 @@ class MyApp extends StatelessWidget {
                   SizedBox(width: 10), // Espacio entre botones
                   ElevatedButton.icon(
                     onPressed: null, // Botón deshabilitado
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // Bordes rectangulares
+                      ),
+                    ),
                     icon: Icon(Icons.add_reaction), // Icono
                     label: Text('Disabled'),
                   ),
@@ -79,12 +95,20 @@ class MyApp extends StatelessWidget {
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color(0xFFB2DFDB), // Verde pastel
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // Bordes rectangulares
+                      ),
                     ),
                     child: Text('Elevated button'),
                   ),
                   SizedBox(width: 10), // Espacio entre botones
                   ElevatedButton(
                     onPressed: null, // Botón deshabilitado
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // Bordes rectangulares
+                      ),
+                    ),
                     child: Text('Disabled'),
                   ),
                 ],
@@ -101,6 +125,9 @@ class MyApp extends StatelessWidget {
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color(0xFFB2DFDB), // Verde pastel
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // Bordes rectangulares
+                      ),
                     ),
                     icon: Icon(Icons.library_add), // Icono
                     label: Text('Elevated button icon'),
@@ -108,6 +135,11 @@ class MyApp extends StatelessWidget {
                   SizedBox(width: 10), // Espacio entre botones
                   ElevatedButton.icon(
                     onPressed: null, // Botón deshabilitado
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero, // Bordes rectangulares
+                      ),
+                    ),
                     icon: Icon(Icons.library_add), // Icono
                     label: Text('Disabled'),
                   ),
